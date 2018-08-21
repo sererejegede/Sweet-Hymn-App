@@ -1,0 +1,7 @@
+{
+  "name": "SweetHymn",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
