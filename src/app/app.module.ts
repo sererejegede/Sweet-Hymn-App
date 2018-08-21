@@ -6,24 +6,31 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { AndroidFullScreen } from "@ionic-native/android-full-screen";
+import { HttpClientModule } from "@angular/common/http";
+import { HymnPage } from "../pages/hymn/hymn";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    HymnPage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    HymnPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    AndroidFullScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

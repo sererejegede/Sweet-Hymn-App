@@ -1,14 +1,27 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<!--<ion-header>-->
+  <!--<ion-navbar>-->
+    <!--<ion-title>-->
+      <!--Ionic Blank-->
+    <!--</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div col-12 padding text-center>
+        <h1>Sweet Hymns</h1>
+      </div>
+      <ion-searchbar (ionInput)="filterCountry($event.target.value)"></ion-searchbar>
+    </ion-row>
+    <ion-row align-items-center>
+      <div col-12>
+        <ion-list padding>
+          <button ion-item *ngFor="let country of countries" (click)="goToHymn(country)">
+            {{ country?.name }}
+          </button>
+        </ion-list>
+      </div>
+    </ion-row>
+  </ion-grid>
 </ion-content>
