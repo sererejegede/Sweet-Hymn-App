@@ -22,7 +22,9 @@ export class MyApp {
       splashScreen.hide();
     });
     this.androidFullScreen.isImmersiveModeSupported()
-      .then(() => console.log('Immersive mode supported'))
+      .then(() => {
+        this.androidFullScreen.immersiveMode();
+      })
       .catch(err => console.log(err));
   }
 }

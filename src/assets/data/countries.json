@@ -1,0 +1,415 @@
+{
+  "current_page": 1,
+  "data": [
+    {
+      "id": 1,
+      "name": "Aruba",
+      "code": "ABW",
+      "code_2": "AW",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 2,
+      "name": "Afghanistan",
+      "code": "AFG",
+      "code_2": "AF",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 3,
+      "name": "Angola",
+      "code": "AGO",
+      "code_2": "AO",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 4,
+      "name": "Anguilla",
+      "code": "AIA",
+      "code_2": "AI",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 5,
+      "name": "\u00c5land Islands",
+      "code": "ALA",
+      "code_2": "AX",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 6,
+      "name": "Albania",
+      "code": "ALB",
+      "code_2": "AL",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 7,
+      "name": "Andorra",
+      "code": "AND",
+      "code_2": "AD",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 8,
+      "name": "United Arab Emirates",
+      "code": "ARE",
+      "code_2": "AE",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 9,
+      "name": "Argentina",
+      "code": "ARG",
+      "code_2": "AR",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 10,
+      "name": "Armenia",
+      "code": "ARM",
+      "code_2": "AM",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 11,
+      "name": "American Samoa",
+      "code": "ASM",
+      "code_2": "AS",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 12,
+      "name": "Antarctica",
+      "code": "ATA",
+      "code_2": "AQ",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 13,
+      "name": "French Southern and Antarctic Lands",
+      "code": "ATF",
+      "code_2": "TF",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 14,
+      "name": "Antigua and Barbuda",
+      "code": "ATG",
+      "code_2": "AG",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 15,
+      "name": "Australia",
+      "code": "AUS",
+      "code_2": "AU",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 16,
+      "name": "Austria",
+      "code": "AUT",
+      "code_2": "AT",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 17,
+      "name": "Azerbaijan",
+      "code": "AZE",
+      "code_2": "AZ",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 18,
+      "name": "Burundi",
+      "code": "BDI",
+      "code_2": "BI",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 19,
+      "name": "Belgium",
+      "code": "BEL",
+      "code_2": "BE",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 20,
+      "name": "Benin",
+      "code": "BEN",
+      "code_2": "BJ",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 21,
+      "name": "Burkina Faso",
+      "code": "BFA",
+      "code_2": "BF",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 22,
+      "name": "Bangladesh",
+      "code": "BGD",
+      "code_2": "BD",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 23,
+      "name": "Bulgaria",
+      "code": "BGR",
+      "code_2": "BG",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 24,
+      "name": "Bahrain",
+      "code": "BHR",
+      "code_2": "BH",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 25,
+      "name": "Bahamas",
+      "code": "BHS",
+      "code_2": "BS",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 26,
+      "name": "Bosnia and Herzegovina",
+      "code": "BIH",
+      "code_2": "BA",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 27,
+      "name": "Saint Barth\u00e9lemy",
+      "code": "BLM",
+      "code_2": "BL",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 28,
+      "name": "Saint Helena, Ascension and Tristan da Cunha",
+      "code": "SHN",
+      "code_2": "SH",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 29,
+      "name": "Belarus",
+      "code": "BLR",
+      "code_2": "BY",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 30,
+      "name": "Belize",
+      "code": "BLZ",
+      "code_2": "BZ",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 31,
+      "name": "Bermuda",
+      "code": "BMU",
+      "code_2": "BM",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 32,
+      "name": "Bolivia",
+      "code": "BOL",
+      "code_2": "BO",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 33,
+      "name": "Caribbean Netherlands",
+      "code": "BES",
+      "code_2": "BQ",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 34,
+      "name": "Brazil",
+      "code": "BRA",
+      "code_2": "BR",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 35,
+      "name": "Barbados",
+      "code": "BRB",
+      "code_2": "BB",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 36,
+      "name": "Brunei",
+      "code": "BRN",
+      "code_2": "BN",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 37,
+      "name": "Bhutan",
+      "code": "BTN",
+      "code_2": "BT",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 38,
+      "name": "Bouvet Island",
+      "code": "BVT",
+      "code_2": "BV",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 39,
+      "name": "Botswana",
+      "code": "BWA",
+      "code_2": "BW",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 40,
+      "name": "Central African Republic",
+      "code": "CAF",
+      "code_2": "CF",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 41,
+      "name": "Canada",
+      "code": "CAN",
+      "code_2": "CA",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 42,
+      "name": "Cocos (Keeling) Islands",
+      "code": "CCK",
+      "code_2": "CC",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 43,
+      "name": "Switzerland",
+      "code": "CHE",
+      "code_2": "CH",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 44,
+      "name": "Chile",
+      "code": "CHL",
+      "code_2": "CL",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 45,
+      "name": "China",
+      "code": "CHN",
+      "code_2": "CN",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 46,
+      "name": "Ivory Coast",
+      "code": "CIV",
+      "code_2": "CI",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 47,
+      "name": "Cameroon",
+      "code": "CMR",
+      "code_2": "CM",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 48,
+      "name": "DR Congo",
+      "code": "COD",
+      "code_2": "CD",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 49,
+      "name": "Republic of the Congo",
+      "code": "COG",
+      "code_2": "CG",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    },
+    {
+      "id": 50,
+      "name": "Cook Islands",
+      "code": "COK",
+      "code_2": "CK",
+      "created_at": "2018-04-24 16:42:02",
+      "updated_at": "2018-04-24 16:42:02"
+    }
+  ],
+  "first_page_url": "https:\/\/ws.educhoicetest.com.ng\/api\/v1\/profile\/country?page=1",
+  "from": 1,
+  "last_page": 7,
+  "last_page_url": "https:\/\/ws.educhoicetest.com.ng\/api\/v1\/profile\/country?page=7",
+  "next_page_url": "https:\/\/ws.educhoicetest.com.ng\/api\/v1\/profile\/country?page=2",
+  "path": "https:\/\/ws.educhoicetest.com.ng\/api\/v1\/profile\/country",
+  "per_page": 50,
+  "prev_page_url": null,
+  "to": 50,
+  "total": 324
+}

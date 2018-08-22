@@ -9,7 +9,7 @@ import { HymnPage } from "../hymn/hymn";
 })
 export class HomePage {
 
-  private path = `https://ws.educhoicetest.com.ng/api/v1/profile/country?origin=crysto-portal.educhoicetest.com.ng`;
+  private path = `../assets/data/countries.json`;
   public countries: any[] = [];
   public defaultCountries: any[] = [];
   public loader;
