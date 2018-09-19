@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {DatabaseProvider} from "../../providers/database/database";
 
 /**
  * Generated class for the HymnPage page.
@@ -25,11 +26,24 @@ export class HymnPage {
     'My Comforter, my All in All <br> ' +
     'Here in the love of Christ I stand <br>'
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              private databaseProvider: DatabaseProvider) {
   }
 
   ionViewDidLoad() {
     this.hymn = this.navParams['data'];
+    this.databaseProvider.getDatabaseState().subscribe(ready => {
+      if (ready) {
+        this.getHymns();
+      }
+    })
+  }
+
+  public getHymns () {
+    this.databaseProvider.getAllHymns().then(res => {
+      console.log('hymns', res);
+    }, err => console.log(err))
   }
 
 }

@@ -9,6 +9,10 @@ import { HomePage } from '../pages/home/home';
 import { AndroidFullScreen } from "@ionic-native/android-full-screen";
 import { HttpClientModule } from "@angular/common/http";
 import { HymnPage } from "../pages/hymn/hymn";
+import { DatabaseProvider } from '../providers/database/database';
+import { IonicStorageModule } from '@ionic/storage';
+import { SQLitePorter } from '@ionic-native/sqlite-porter';
+import { SQLite } from '@ionic-native/sqlite';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,7 @@ import { HymnPage } from "../pages/hymn/hymn";
   imports: [
     BrowserModule,
     HttpClientModule,
+    IonicStorageModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -31,7 +36,10 @@ import { HymnPage } from "../pages/hymn/hymn";
     StatusBar,
     SplashScreen,
     AndroidFullScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DatabaseProvider,
+    SQLitePorter,
+    SQLite
   ]
 })
 export class AppModule {}
