@@ -10,6 +10,7 @@
     "build": "ionic-app-scripts build",
     "custom": "ionic serve --port 8100",
     "android": "ionic cordova run android --device",
+    "lc": "ionic cordova run android --device -lc",
     "lint": "ionic-app-scripts lint"
   },
   "dependencies": {
@@ -32,8 +33,8 @@
     "cordova-android": "7.0.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-fullscreen": "^1.2.0",
-    "cordova-plugin-ionic-keyboard": "^2.1.2",
-    "cordova-plugin-ionic-webview": "^2.0.3",
+    "cordova-plugin-ionic-keyboard": "^2.1.3",
+    "cordova-plugin-ionic-webview": "^2.1.4",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-whitelist": "^1.3.3",
     "cordova-sqlite-storage": "^2.4.0",
@@ -55,7 +56,9 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
       "cordova-plugin-ionic-keyboard": {},
       "uk.co.workingedge.cordova.plugin.sqliteporter": {},
       "cordova-sqlite-storage": {}

@@ -37,6 +37,7 @@ export class DatabaseProvider {
       }).then((db: SQLiteObject) => {
         this.database = db;
         this.storage.get('database_filled').then(val => {
+          console.log(val);
           (val) ? this.databaseReady.next(true) : this.fillDatabase();
         })
       })
@@ -57,19 +58,38 @@ export class DatabaseProvider {
   }
 
   public getAllHymns () {
-    return this.database.executeSql('SELECT * FROM lyrics').then(data => {
+    return this.database.executeSql('SELECT * FROM lyrics', []).then(data => {
       const hymns = [];
-      console.log('Database data', data.rows.item);
+      console.log(data);
       if (data.rows.length > 0) {
-        data.rows.forEach((datum, i) => {
+        for (let i = 0; i < data.rows.length; i++) {
           hymns.push({
-            id: datum.item(i).id,
-            title: datum.item(i).title,
-            chorus: datum.item(i).chorus
-          })
-        })
+            id: data.rows.item(i).id,
+            title: data.rows.item(i).title,
+            chorus: data.rows.item(i).chorus
+          });
+        }
       }
       return hymns;
+    }, err => {
+      console.log(err);
+      return [];
+    });
+  }
+
+  public getHymnLyrics (hymn_id = 1) {
+    return this.database.executeSql(`SELECT * FROM verses WHERE hymn_id = ${hymn_id}`, []).then(data => {
+      const lyrics = [];
+      if (data.rows.length > 0) {
+        for (let i = 0; i < data.rows.length; i++) {
+          lyrics.push({
+            id: data.rows.item(i).id,
+            number: data.rows.item(i).number,
+            content: data.rows.item(i).content,
+          });
+        }
+      }
+      return lyrics;
     }, err => {
       console.log(err);
       return [];

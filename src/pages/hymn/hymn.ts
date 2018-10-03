@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {DatabaseProvider} from "../../providers/database/database";
+import {HttpClient} from "@angular/common/http";
 
 /**
  * Generated class for the HymnPage page.
@@ -17,32 +18,33 @@ import {DatabaseProvider} from "../../providers/database/database";
 export class HymnPage {
 
   public hymn;
-  public lyrics = 'In Christ alone my hope is found <br>' +
-    ' He is my light, my strength, my song <br> ' +
-    'This Cornerstone, this solid ground <br> ' +
-    'Firm through the fiercest drought and storm <br> ' +
-    'What heights of love, what depths of peace <br> ' +
-    'When fears are stilled, when strivings cease <br> ' +
-    'My Comforter, my All in All <br> ' +
-    'Here in the love of Christ I stand <br>'
+  public lyrics: any[] = [];
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              private databaseProvider: DatabaseProvider) {
+              private databaseProvider: DatabaseProvider,
+              private http: HttpClient) {
   }
 
   ionViewDidLoad() {
     this.hymn = this.navParams['data'];
     this.databaseProvider.getDatabaseState().subscribe(ready => {
       if (ready) {
-        this.getHymns();
+        this.getHymn(this.hymn.id);
+      } else {
+        this.http.get(`http://localhost:3000/hymns/${this.hymn.id}`).subscribe(res => {
+          this.lyrics = res['data'];
+        }, err => {
+          console.log(err);
+        })
       }
     })
   }
 
-  public getHymns () {
-    this.databaseProvider.getAllHymns().then(res => {
-      console.log('hymns', res);
+  public getHymn (hymn_id) {
+    this.databaseProvider.getHymnLyrics(hymn_id).then(res => {
+      console.log('lyrics', res);
+      this.lyrics = res;
     }, err => console.log(err))
   }
 

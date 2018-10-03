@@ -1,19 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>{{ hymn?.name }}</ion-title>
+    <ion-title>{{ hymn?.title }}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-grid>
-    <ion-row col-12 text-center padding-horizontal>
-      <h1 col-12 padding-vertical>The Beginning</h1>
-    </ion-row>
+    <!--<ion-row col-12 text-center padding-horizontal>-->
+      <!--<h1 col-12 padding-vertical>{{ hymn?.title }}</h1>-->
+    <!--</ion-row>-->
     <ion-row text-left>
-      <ion-list>
-        <ion-item padding-right class="row" *ngFor="let verse of ['','','','']; let i = index">
-          <div class="numbering" float-left col-1><b>{{ i + 1 }}.</b></div>
-          <div float-right col-11 class="verse" [innerHTML]="lyrics"></div>
+      <ion-list col-12>
+        <ion-item padding-right class="row" *ngFor="let verse of lyrics; let i = index">
+          <div class="numbering" float-left col-1><b>{{ verse?.number }}.</b></div>
+          <div float-right col-11 class="verse" [innerHTML]="verse?.content"></div>
         </ion-item>
       </ion-list>
     </ion-row>

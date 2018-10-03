@@ -12,13 +12,13 @@
       <div col-12 padding text-center>
         <h1>Sweet Hymns</h1>
       </div>
-      <ion-searchbar (ionInput)="filterCountry($event.target.value)"></ion-searchbar>
+      <ion-searchbar (ionInput)="filterHymn($event.target.value)"></ion-searchbar>
     </ion-row>
     <ion-row align-items-center>
       <div col-12>
         <ion-list padding>
-          <button ion-item *ngFor="let country of countries" (click)="goToHymn(country)">
-            {{ country?.name }}
+          <button ion-item *ngFor="let hymn of hymns" (click)="goToHymn(hymn)">
+            {{ hymn?.title }}
           </button>
         </ion-list>
       </div>
